@@ -39,15 +39,20 @@
 ;la facultad de ingenieria informatica
 ;(CODIGO NOMBRE CATEGORIA (CURSOS) (DISPONIBILIDAD))
 (defun LEE_PROF ()
-  '((012345 "JULIO VALVERDE" CONTRATADO ((TBP 10) (TP1 7)) ( (L (08:00 15:30)) (M (08:00 13:00)) )
+  '( (111111 "JULIO VALVERDE" CONTRATADO ((IF002 10) (TP1 7)) ( (L ("08:00" "15:30"))
+                                                              (M ("08:00" "13:00"))
+                                                              (J ("08:00" "13:00"))))
 
-  )
+     (222222 "JUANA SEGURA" CONTRATADO ((IF002 9) (TP1 8)) (  (M ("08:00" "13:00"))
+                                                            (X ("08:00" "13:00"))
+                                                            (V ("08:00" "13:00"))))
+     )
 )
 
 ;Lee los cursos de la facultad de ingeniería informática
 ; ((CICLO (CODIGO ((TEORIA/PRACTICA/TALLER HORAS GRUPOS TIPO_SALON)))))
 (defun LEE_CUR ()
-  '((1 
+  '((1
     (IF001 ((TEORIA 2 1 SIMPLE) (PRACTICA 1 1 SIMPLE) (TALLER 3 2 LABO_QUIMICA))) ;QUIMICA
     (IF002 ((TEORIA 2 1 SIMPLE) (PRACTICA 1 1 SIMPLE) (TALLER 3 5 LANO_INFORMATICA)))) ;TBP
   (2
@@ -57,8 +62,11 @@
   )
 )
 
+
+
+
 ; horas academicas asignadas a números
-  (defun HORAS() 
+  (defun HORAS()
 (1 ("08:00" "08:50")
  2 ("08:50" "09:40")
  3 ("09:40" "10:30")
