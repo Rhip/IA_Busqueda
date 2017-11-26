@@ -85,3 +85,8 @@
  16 ("20:30" "21:20")
  17 ("21:20" "22:10")
 ))
+
+;funcion prar quitarle las horas del curso que se le ha asginado a un prorfesor, a su diponibilidad
+(defun quitarHorario (DISPONIBILIDAD HORARIO) (
+  (setq DISPONIBILIDAD (set-difference DISPONIBILIDAD HORARIO)))
+)
