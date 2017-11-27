@@ -90,3 +90,5 @@
 (defun quitarHorario (DISPONIBILIDAD HORARIO) (
   (setq DISPONIBILIDAD (set-difference DISPONIBILIDAD HORARIO)))
 )
+
+; funcion que devuelve el elemento n de una lista (la lista empieza en el índice 0) (nth n lista)
