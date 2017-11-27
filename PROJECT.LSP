@@ -39,13 +39,13 @@
 ;la facultad de ingenieria informatica
 ;(CODIGO NOMBRE CATEGORIA (CURSOS) (DISPONIBILIDAD))
 (defun LEE_PROF ()
-  '( (111111 "JULIO VALVERDE" CONTRATADO ((IF002 10) (TP1 7)) ( (L ("08:00" "15:30"))
-                                                              (M ("08:00" "13:00"))
-                                                              (J ("08:00" "13:00"))))
+  '( (111111 "JULIO VALVERDE" CONTRATADO ((IF002 10) (TP1 7)) ( (L (1 2 3 4 5 6 7 8 9))
+                                                              (M (1 2 3 4 5 6))
+                                                              (J (1 2 3 4 5 6))))
 
-     (222222 "JUANA SEGURA" CONTRATADO ((IF002 9) (TP1 8)) (  (M ("08:00" "13:00"))
-                                                            (X ("08:00" "13:00"))
-                                                            (V ("08:00" "13:00"))))
+     (222222 "JUANA SEGURA" CONTRATADO ((IF002 9) (TP1 8)) (  (M (1 2 3 4 5 6))
+                                                            (X (1 2 3 4 5 6))
+                                                            (V (1 2 3 4 5 6))))
      )
 )
 
